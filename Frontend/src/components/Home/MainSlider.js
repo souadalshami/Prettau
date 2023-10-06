@@ -1,10 +1,10 @@
 
-import slider_1 from '../../assets/images/shapes/main-slider-shape-1.png'
 import slider_2 from '../../assets/images/shapes/main-slider-shape-2.png'
 import background   from '../../assets/images/backgrounds/slider-1-1.jpg'
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
+import { Link } from 'react-router-dom';
 
 function MainSlider(){
 
@@ -27,9 +27,6 @@ function MainSlider(){
                     <div className="main-slider__bg"
                         style={{ backgroundImage: `url(${background})` }}>
                     </div>
-                    <div className="main-slider__shape-1 rotate-me">
-                        <img src={slider_1} alt=""/>
-                    </div>
                     <div className="main-slider__shape-2 float-bob-x">
                         <img src={slider_2} alt=""/>
                     </div>
@@ -41,7 +38,7 @@ function MainSlider(){
                                 typesetting industry. Lorem Ipsum has been.</p>
                             <div className="main-slider__btn-and-video-box">
                                 <div className="main-slider__btn-box">
-                                    <a href="contact.html" className="thm-btn main-slider__btn">Get Consulting</a>
+                                    <Link to="/contact" className="thm-btn main-slider__btn">Get Consulting</Link>
                                 </div>
                                 <div className="main-slider__video-link">
                                     <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" className="video-popup">
@@ -61,9 +58,6 @@ function MainSlider(){
 
                 <div className="item main-slider__slide-1">
                     <div className="main-slider__bg" style={{ backgroundImage: `url(${background})` }}>
-                    </div>
-                    <div className="main-slider__shape-1 rotate-me">
-                        <img src={slider_1} alt=""/>
                     </div>
                     <div className="main-slider__shape-2 float-bob-x">
                         <img src={slider_2} alt=""/>
@@ -96,9 +90,6 @@ function MainSlider(){
                 <div className="item main-slider__slide-1">
                     <div className="main-slider__bg"
                         style={{ backgroundImage: `url(${background})` }}>
-                    </div>
-                    <div className="main-slider__shape-1 rotate-me">
-                        <img src={slider_1} alt=""/>
                     </div>
                     <div className="main-slider__shape-2 float-bob-x">
                         <img src={slider_2} alt=""/>

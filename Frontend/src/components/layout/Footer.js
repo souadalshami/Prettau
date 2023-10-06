@@ -2,7 +2,8 @@
 
 import site_footer_shape_1   from '../../assets/images/shapes/site-footer-shape-1.png'
 import site_footer_shape_2   from '../../assets/images/shapes/site-footer-shape-2.png'
-import footer_logo from  '../../assets/images/resources/footer-logo.png'
+import footer_logo from  '../../assets/images/logo/black.png'
+import { Link } from 'react-router-dom';
 
 
 
@@ -23,10 +24,9 @@ function Footer(){
                         <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                             <div className="footer-widget__column footer-widget__about">
                                 <div className="footer-widget__logo">
-                                    <a href="index.html"><img src={footer_logo} alt=""/></a>
-                                </div>
-                                <p className="footer-widget__about-text">Lorem Ipsum is simply dummy text of <br/> printing
-                                    and typesetting industry.</p>
+                                    <Link to="/"><img src={footer_logo} alt=""/></Link>
+                                </div> 
+                                <p className="footer-widget__about-text">Provides the integrated solutions for all Dental Prosthetics in parallel with the high technology around the world.</p>
                                 <div className="site-footer__social">
                                     <a href="#"><i className="fab fa-facebook"></i></a>
                                     <a href="#"><i className="fab fa-youtube"></i></a>
@@ -37,16 +37,16 @@ function Footer(){
                         <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                             <div className="footer-widget__column footer-widget__company">
                                 <div className="footer-widget__title-box">
-                                    <h3 className="footer-widget__title">Company</h3>
+                                    <h3 className="footer-widget__title">Products</h3>
                                 </div>
                                 <ul className="footer-widget__company-list list-unstyled">
-                                    <li><a href="business-planning.html">Business planning</a></li>
-                                    <li><a href="tax-strategy.html">Tax strategy
+                                    <li><a href="business-planning.html">Premium</a></li>
+                                    <li><a href="tax-strategy.html">Laser Implant
                                         </a></li>
-                                    <li><a href="financial-advices.html">Financial advices
+                                    <li><a href="financial-advices.html">Peek Polymer
                                         </a></li>
-                                    <li><a href="insurance-strategy.html">Insurance strategy
-                                        </a></li>
+                                    <li><a href="insurance-strategy.html">Acrylic</a></li>
+                                    <li><a href="insurance-strategy.html">Ortho</a></li>
                                 </ul>
                             </div>
                         </div>

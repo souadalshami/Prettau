@@ -3,7 +3,7 @@ import  site_footer_two_shape_1  from '../../assets/images/shapes/site-footer-tw
 import  footer_logo_2  from '../../assets/images/resources/footer-logo-2.png'
 import site_footer_two_shape_2 from '../../assets/images/shapes/site-footer-two-shape-2.png'
 import    footer_widget_two_portfolio_img_1  from '../../assets/images/project/footer-widget-two-portfolio-img-1.jpg';
-import logo from '../../assets/images/logo/white.svg'
+import logo from '../../assets/images/logo/white.png'
 
 
 
@@ -35,7 +35,7 @@ function PageFooter(){
                         <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                             <div className="footer-widget-two__column footer-widget-two__about">
                                 <div className="footer-widget-two__logo">
-                                    <Link to="/"><img src={logo} alt=""  width={160}  /></Link>
+                                    <Link to="/"><img src={logo} alt=""   /></Link>
                                 </div>
                                 <p className="footer-widget-two__about-text">Provides the integrated solutions for all Dental<br/> Prosthetics in parallel with the high <br/> technology around the world</p>
                                 <div className="site-footer-two__social">
@@ -51,9 +51,9 @@ function PageFooter(){
                                     <h3 className="footer-widget-two__title">Products</h3>
                                 </div>
                                 <ul className="footer-widget-two__company-list list-unstyled">
-                                    <li><a href="business-planning.html">Premium</a></li>
-                                    <li><a href="tax-strategy.html">Laser Implant
-                                        </a></li>
+                                    <li><Link to="/premium">Premium</Link></li>
+                                    <li><Link to="/tax-strategy.html">Laser Implant
+                                        </Link></li>
                                     <li><a href="financial-advices.html">Peek Polymer
                                         </a></li>
                                     <li><a href="insurance-strategy.html">Acrylic</a></li>

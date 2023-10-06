@@ -1,0 +1,9 @@
+a.active {
+    color: var(--bixola-base) !important;
+}
+.header-bg{
+    background-color: #0d121e !important;
+}
+.main-header{
+    position: fixed !important;
+}

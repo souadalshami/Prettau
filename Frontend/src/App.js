@@ -1,6 +1,7 @@
 
 import React ,{useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
+import "./assets/css/style.css";
 import './assets/vendors/animate/animate.min.css'
 import './assets/vendors/animate/custom-animate.css'
 import 'bootstrap-select/dist/css/bootstrap-select.css';
@@ -16,6 +17,8 @@ import ScrollToTop from "./components/ScrollToTop";
 import Cursor from "./Cursor";
 import Preloader from './components/Preloader';
 import Certificates from './pages/Certificates';
+import Premium from './pages/Premium';
+import GoToTop from './components/GoToTop';
 function App() {
   const [isloading, setloading] = useState(true);
   setTimeout(() => setloading(false), 3000);
@@ -32,7 +35,9 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/certificates" element={<Certificates />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/Premium" element={<Premium />} />
             </Routes>
+            <GoToTop/>
           </Router>
         </div>
       </div>

@@ -40,7 +40,7 @@ function Testimonial(){
                             </div>
                             <div className="testimonial-two__client-info">
                                 <h3>Jacob Jones</h3>
-                                <p>CEO & Co-Founder</p>
+                                <p>certificate of compliance</p>
                             </div>
                             <p className="testimonial-two__text">"I am really satisfied with it. I'm good to go. It really
                                 saves me time and effort. Lorem Ipsum is simply dummy text of the printing and
