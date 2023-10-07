@@ -98,7 +98,7 @@ return(
                                     </li>
 
                                     <li>
-                                        <NavLink exact="true" to="/contact">Evants</NavLink>
+                                        <NavLink exact="true" to="/evants">Evants</NavLink>
                                     </li>
                                     <li>
                                         <NavLink exact="true" to="/certificates">Certificates</NavLink>

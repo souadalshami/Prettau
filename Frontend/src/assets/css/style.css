@@ -7,3 +7,18 @@ a.active {
 .main-header{
     position: fixed !important;
 }
+.team-one__content {
+  background-color: var(--bixola-base) !important;
+}
+
+.portfolio-one__img:before {
+  background: #8D8F94 !important;
+} 
+img{
+   user-drag: none;  
+   user-select: none;
+   -moz-user-select: none;
+   -webkit-user-drag: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+}
