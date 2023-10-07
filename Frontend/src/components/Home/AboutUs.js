@@ -50,10 +50,9 @@ function AboutUs(){
                                 </div>
                                 <h2 className="section-title__title">We are the best agency <br/> to improve your deals.</h2>
                             </div>
-                            <p className="about-one__text">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                <br/> industry. Lorem Ipsum has been the industry's standard dummy <br/> text ever since
-                                the 1500s,
-                                when an unknown printer.</p>
+                            <p className="about-one__text">Provides the integrated solutions for all dental prosthetics in parallel with the high technology around the world.
+                             with directly attached to the specialized international companies
+                            </p>
                             <ul className="about-one__points list-unstyled">
                                 <li>
                                     <div className="icon">

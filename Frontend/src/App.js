@@ -19,6 +19,7 @@ import Preloader from './components/Preloader';
 import Certificates from './pages/Certificates';
 import Premium from './pages/Premium';
 import GoToTop from './components/GoToTop';
+import ProductDetails from './pages/ProductDetails';
 function App() {
   const [isloading, setloading] = useState(true);
   setTimeout(() => setloading(false), 3000);
@@ -36,6 +37,7 @@ function App() {
               <Route path="/certificates" element={<Certificates />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/Premium" element={<Premium />} />
+              <Route path="/ProductDetails" element={<ProductDetails />} />
             </Routes>
             <GoToTop/>
           </Router>

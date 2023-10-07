@@ -1,21 +1,18 @@
 import Header from '../components/layout/Header'
 import PageFooter from '../components/layout/PageFooter';
-import PremiumProduct from '../components/Products/PremiumProduct';
-import PageHeader from '../components/Products/PageHeader';
+import Details from '../components/ProductDetails/Details';
+import PageHeader from '../components/ProductDetails/PageHeader';
 
-function Premium(){
+function ProductDetails(){
 
     return(
         <div>
             <Header/>
             <PageHeader/>
-            <PremiumProduct/>
+            <Details/>
             <PageFooter/>
         </div>
-
     )
 
 }
-
-
-export default Premium;
+export default ProductDetails;

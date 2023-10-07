@@ -40,7 +40,7 @@ function Footer(){
                                     <h3 className="footer-widget__title">Products</h3>
                                 </div>
                                 <ul className="footer-widget__company-list list-unstyled">
-                                    <li><a href="business-planning.html">Premium</a></li>
+                                    <li><Link to="/premium">Premium</Link></li>
                                     <li><a href="tax-strategy.html">Laser Implant
                                         </a></li>
                                     <li><a href="financial-advices.html">Peek Polymer

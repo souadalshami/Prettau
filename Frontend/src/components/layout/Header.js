@@ -12,17 +12,17 @@ const locales = {
 
 function Header(){
     const { t, i18n } = useTranslation();
-    
-const [color,setColor] = useState(false);
-const changeColor = ()=>{
-  if(window.scrollY >= 1){
-    setColor(true)
 
-  }else{
-    setColor(false)
-  }
-}
-window.addEventListener("scroll", changeColor)
+    const [color,setColor] = useState(false);
+    const changeColor = ()=>{
+        if(window.scrollY >= 1){
+            setColor(true)
+
+        }else{
+            setColor(false)
+        }
+    }
+    window.addEventListener("scroll", changeColor)
 return(
     <>
         <header className="main-header">
@@ -60,9 +60,9 @@ return(
                         </div>
                         <div className="main-header__top-right">
                             <div className="main-header__social">
-                                <a href="https://www.youtube.com/channel/UCfTmPFfWHlAIOwnlLMa7igw"><i className="fab fa-youtube"></i></a>
-                                <a href="https://www.facebook.com/Prettau-Lumineer-127597173974796/"><i className="fab fa-facebook"></i></a>
-                                <a href="https://www.instagram.com/prettau_dental_lab/?fbclid=IwAR21GZnx1SyeCBB14au0or9daS772BiSPfdqHsNPun8sCEiqqu_U9G54wwg"><i className="fab fa-instagram"></i></a>
+                                <a href="https://www.youtube.com/channel/UCfTmPFfWHlAIOwnlLMa7igw" target="_blank"><i className="fab fa-youtube"></i></a>
+                                <a href="https://www.facebook.com/Prettau-Lumineer-127597173974796/" target="_blank"><i className="fab fa-facebook"></i></a>
+                                <a href="https://www.instagram.com/prettau_dental_lab/?fbclid=IwAR21GZnx1SyeCBB14au0or9daS772BiSPfdqHsNPun8sCEiqqu_U9G54wwg" target="_blank"><i className="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -98,7 +98,7 @@ return(
                                     </li>
 
                                     <li>
-                                        <NavLink exact="true" to="/contact">News & Evants</NavLink>
+                                        <NavLink exact="true" to="/contact">Evants</NavLink>
                                     </li>
                                     <li>
                                         <NavLink exact="true" to="/certificates">Certificates</NavLink>
@@ -145,8 +145,8 @@ return(
                 </div>
             </nav>
         </header>
-        <div class="stricky-header stricked-menu main-menu">
-            <div class="sticky-header__content"></div>
+        <div className="stricky-header stricked-menu main-menu">
+            <div className="sticky-header__content"></div>
         </div>
     </>
 )

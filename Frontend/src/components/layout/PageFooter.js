@@ -39,9 +39,9 @@ function PageFooter(){
                                 </div>
                                 <p className="footer-widget-two__about-text">Provides the integrated solutions for all Dental<br/> Prosthetics in parallel with the high <br/> technology around the world</p>
                                 <div className="site-footer-two__social">
-                                    <a href="#"><i className="fab fa-facebook"></i></a>
-                                    <a href="#"><i className="fab fa-youtube"></i></a>
-                                    <a href="#"><i className="fab fa-instagram"></i></a>
+                                    <a href="https://www.facebook.com/prettau2011" target='_blank'><i className="fab fa-facebook"></i></a>
+                                    <a href="https://www.youtube.com/channel/UCfTmPFfWHlAIOwnlLMa7igw" target='_blank'><i className="fab fa-youtube"></i></a>
+                                    <a href="https://www.instagram.com/prettau_dental_lab/" target='_blank'><i className="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -151,7 +151,7 @@ function PageFooter(){
             <div className="site-footer-two__bottom">
                 <div className="container">
                     <div className="site-footer-two__bottom-inner">
-                        <p className="site-footer__bottom-text">© Copyright bixola 2023. All rights reserved.</p>
+                        <p className="site-footer__bottom-text">© Copyright Prettau 2023. All rights reserved.</p>
                     </div>
                 </div>
             </div>
