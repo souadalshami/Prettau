@@ -7,13 +7,6 @@ a.active {
 .main-header{
     position: fixed !important;
 }
-.language{
-    margin-right:25px
-}
-.language .sub-menu{
-    padding: 8px !important;
-    min-width: 140px !important;
-}
 .team-one__content {
   background-color: var(--bixola-base) !important;
 }
@@ -28,4 +21,11 @@ img{
    -webkit-user-drag: none;
    -webkit-user-select: none;
    -ms-user-select: none;
+}
+.language{
+    margin-right:25px
+}
+.language .sub-menu{
+    padding: 8px !important;
+    min-width: 140px !important;
 }
