@@ -104,7 +104,7 @@ return(
                                         <NavLink exact="true" to="/certificates">Certificates</NavLink>
                                     </li>
                                     <li>
-                                        <NavLink exact="true" to="/contact">Video</NavLink>
+                                        <NavLink exact="true" to="/video">Video</NavLink>
                                     </li>
                                     <li>
                                         <NavLink exact="true" to="/contact">Contact</NavLink>

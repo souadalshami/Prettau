@@ -17,6 +17,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Cursor from "./Cursor";
 import Preloader from './components/Preloader';
 import Certificates from './pages/Certificates';
+import Video from './pages/Video';
 import Premium from './pages/Premium';
 import GoToTop from './components/GoToTop';
 import ProductDetails from './pages/ProductDetails';
@@ -35,6 +36,8 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/certificates" element={<Certificates />} />
+              <Route path="/video" element={<Video />} />
+
               <Route path="/contact" element={<Contact />} />
               <Route path="/Premium" element={<Premium />} />
               <Route path="/ProductDetails" element={<ProductDetails />} />
