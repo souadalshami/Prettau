@@ -11,6 +11,7 @@ const locales = {
 
 
 function Header(){
+    const [navbarOpen, setNavbarOpen] = useState(false);
     const { t, i18n } = useTranslation();
 
     const [color,setColor] = useState(false);
@@ -76,8 +77,8 @@ return(
                                 <Link to="/"><img src={gold_logo} alt="" /></Link>
                             </div>
                             <div className="main-menu__main-menu-box">
-                                <a href="#" className="mobile-nav__toggler"><i className="fa fa-bars"></i></a>
-                                <ul className="main-menu__list">
+                                <a href="#" className="mobile-nav__toggler"  onClick={() => setNavbarOpen((prev) => !prev)}><i className="fa fa-bars"></i></a>
+                                <ul className="main-menu__list" >
                                     <li> 
                                         <NavLink exact="true" to="/"> Home </NavLink>    
                                     </li> 
@@ -112,7 +113,7 @@ return(
                                 </ul>
                             </div>
                             <div className="main-menu__right">
-                                <div className="">
+                                <div className="language">
                                     <ul className="main-menu__list">
                                         <li className="dropdown">
                                             <a href="#">{i18n.resolvedLanguage.toUpperCase()}</a>
@@ -147,6 +148,67 @@ return(
         </header>
         <div className="stricky-header stricked-menu main-menu">
             <div className="sticky-header__content"></div>
+        </div>
+
+        <div className={`mobile-nav__wrapper${navbarOpen ? ' expanded' : ''}`}>
+            <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+            <div class="mobile-nav__content">
+                <span class="mobile-nav__close mobile-nav__toggler"  onClick={() => setNavbarOpen(false)}><i class="fa fa-times"></i></span>
+                <div class="logo-box">
+                    <a href="index.html" aria-label="logo image"><img src={gold_logo} alt="" /></a>
+                </div>
+                <div class="mobile-nav__container">
+                    <ul className="main-menu__list">
+                        <li class="dropdown current megamenu">
+                            <Link to="/">Home </Link>
+                        </li>
+                        <li class="dropdown current megamenu">
+                            <Link to="/about">About </Link>
+                        </li>
+                        <li class="dropdown current megamenu">
+                            <a href="#">Products
+                                <button aria-label="dropdown toggler"><i class="fa fa-angle-down"></i></button>
+                             </a>
+                             <ul class="sub-menu d-none">
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="services-carousel.html">Services Carousel</a></li>
+                                <li><a href="business-audit.html">Business Audit</a></li>
+                            </ul>
+                        </li> 
+                        <li class="dropdown current megamenu">
+                            <Link to="/events">Events </Link>
+                        </li>
+                        <li class="dropdown current megamenu">
+                            <Link to="/certificates">Certificates </Link>
+                        </li>    
+                        <li class="dropdown current megamenu">
+                            <Link to="/video">Video </Link>
+                        </li>    
+                        <li class="dropdown current megamenu">
+                            <Link to="/contact">Contact </Link>
+                        </li>    
+                    </ul>
+                </div>
+
+                <ul class="mobile-nav__contact list-unstyled">
+                    <li>
+                        <i class="fa fa-envelope"></i>
+                        <a href="mailto:needhelp@packageName__.com">needhelp@bixola.com</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-phone-alt"></i>
+                        <a href="tel:666-888-0000">666 888 0000</a>
+                    </li>
+                </ul>
+                <div class="mobile-nav__top">
+                    <div class="mobile-nav__social">
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-facebook-square"></a>
+                        <a href="#" class="fab fa-pinterest-p"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </>
 )
