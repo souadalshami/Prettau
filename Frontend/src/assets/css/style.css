@@ -7,3 +7,10 @@ a.active {
 .main-header{
     position: fixed !important;
 }
+.language{
+    margin-right:25px
+}
+.language .sub-menu{
+    padding: 8px !important;
+    min-width: 140px !important;
+}
