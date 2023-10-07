@@ -1,5 +1,6 @@
 
 import background from '../../assets/images/backgrounds/counter-one-bg.png'
+import CountUp from "react-countup";
 
 function Counter(){
 
@@ -14,7 +15,14 @@ function Counter(){
                                 <span className="icon-icon-years-experience"></span>
                             </div>
                             <div className="counter-one__count count-box">
-                                <h3 className="count-text" data-stop="10" data-speed="1500">00</h3>
+                                <h3 className="count-text" data-stop="10" data-speed="1500">
+                                          <CountUp
+                                    end={11}
+                                    duration={2}
+                                    enableScrollSpy
+                                    scrollSpyOnce
+                                     />
+                                </h3>
                             </div>
                             <p className="counter-one__text">Years of Experience</p>
                         </li>
@@ -23,7 +31,14 @@ function Counter(){
                                 <span className="icon-icon-team-members"></span>
                             </div>
                             <div className="counter-one__count count-box">
-                                <h3 className="count-text" data-stop="89" data-speed="1500">00</h3>
+                                <h3 className="count-text" data-stop="89" data-speed="1500">
+                                  <CountUp
+                                    end={77}
+                                    duration={2}
+                                    enableScrollSpy
+                                    scrollSpyOnce
+                                     />
+                                </h3>
                             </div>
                             <p className="counter-one__text">Team members</p>
                         </li>
@@ -32,7 +47,14 @@ function Counter(){
                                 <span className="icon-icon-successful-project"></span>
                             </div>
                             <div className="counter-one__count count-box">
-                                <h3 className="count-text" data-stop="789" data-speed="1500">00</h3>
+                                <h3 className="count-text" data-stop="789" data-speed="1500">
+                                <CountUp
+                                    end={60}
+                                    duration={2}
+                                    enableScrollSpy
+                                    scrollSpyOnce
+                                />
+                                </h3>
                                 <span>+</span>
                             </div>
                             <p className="counter-one__text">Successful Projects</p>
@@ -42,7 +64,14 @@ function Counter(){
                                 <span className="icon-icon-satisfied-clients"></span>
                             </div>
                             <div className="counter-one__count count-box">
-                                <h3 className="count-text" data-stop="650" data-speed="1500">00</h3>
+                                <h3 className="count-text" data-stop="650" data-speed="1500">
+                                 <CountUp
+                                    end={150}
+                                    duration={2}
+                                    enableScrollSpy
+                                    scrollSpyOnce
+                        />
+                                </h3>
                                 <span>+</span>
                             </div>
                             <p className="counter-one__text">Satisfied Clients</p>
