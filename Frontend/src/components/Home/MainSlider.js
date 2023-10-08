@@ -33,10 +33,10 @@ function MainSlider(){
                     </div>
                     <div className="container">
                         <div className="main-slider__content">
-                            <p className="main-slider__sub-title">WE CREAT DIGITAL PRODUCT</p>
-                            <h2 className="main-slider__title">Get more of what <br/> you want from your <br/> business</h2>
-                            <p className="main-slider__text">Lorem Ipsum is simply dummy text of the printing and <br/>
-                                typesetting industry. Lorem Ipsum has been.</p>
+                            {/* <p className="main-slider__sub-title">WE CREAT DIGITAL PRODUCT</p> */}
+                            <h2 className="main-slider__title">Get ready for a <br/>season of smiles</h2>
+                            <p className="main-slider__text">Exclusive Prettau Dental Lab offers aesthetic dentistry,<br/> implants
+and orthodontics. We take a holistic approach to dental care.</p>
                             <div className="main-slider__btn-and-video-box">
                                 <div className="main-slider__btn-box">
                                     <Link to="/contact" className="thm-btn main-slider__btn">Get Consulting</Link>
@@ -59,7 +59,7 @@ function MainSlider(){
             
 
 
-                <div className="item main-slider__slide-1">
+                {/* <div className="item main-slider__slide-1">
                     <div className="main-slider__bg" style={{ backgroundImage: `url(${background})` }}>
                     </div>
                     <div className="main-slider__shape-2 float-bob-x">
@@ -101,7 +101,7 @@ function MainSlider(){
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
             </OwlCarousel>
         </section>

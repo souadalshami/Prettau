@@ -56,13 +56,13 @@ function Brand(){
                                 </a>
                             </div>
                         </div>
-                        <div className="brand-one__single">
+                        {/* <div className="brand-one__single">
                             <div className="brand-one__img">
                                 <a href="https://www.vertex-dental.com/" target="_blank">
                                     <img src={vertex} alt=""/>
                                 </a>
                             </div>
-                        </div>
+                        </div> */}
                         <div className="brand-one__single">
                             <div className="brand-one__img">
                                 <a href="https://www.vita-zahnfabrik.com/" target="_blank">
@@ -77,20 +77,20 @@ function Brand(){
                                 </a>
                             </div>
                         </div>
-                        <div className="brand-one__single">
+                        {/* <div className="brand-one__single">
                             <div className="brand-one__img">
                                 <a href="https://www.yeti-dental.com/en/" target="_blank">
                                     <img src={yetal} alt=""/>
                                 </a>
                             </div>
-                        </div>
-                        <div className="brand-one__single">
+                        </div> */}
+                        {/* <div className="brand-one__single">
                             <div className="brand-one__img">
                                 <a href="https://zirkonzahn.com/" target="_blank">
                                     <img src={zircon} alt=""/>
                                 </a>
                             </div>
-                        </div>
+                        </div> */}
                     </OwlCarousel>
                 </div>
             </div>

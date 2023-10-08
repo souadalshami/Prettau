@@ -29,3 +29,15 @@ img{
     padding: 8px !important;
     min-width: 140px !important;
 }
+.footer-widget__company-list li+li{
+    margin-top: 0 !important;
+}
+.brand-one__img{
+    filter: brightness(0) invert(1);
+}
+.brand-one__inner{
+    padding: 40px 0 30px !important
+}
+.main-slider__title{
+    text-transform: unset;
+}

@@ -52,12 +52,29 @@ function PageFooter(){
                                 </div>
                                 <ul className="footer-widget-two__company-list list-unstyled">
                                     <li><Link to="/premium">Premium</Link></li>
+                                    <li><Link to="/premium">Titanium</Link></li>
+                                    <li><Link to="/premium">Zircon</Link></li>
                                     <li><Link to="/tax-strategy.html">Laser Implant
                                         </Link></li>
                                     <li><a href="financial-advices.html">Peek Polymer
                                         </a></li>
                                     <li><a href="insurance-strategy.html">Acrylic</a></li>
                                     <li><a href="insurance-strategy.html">Ortho</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div className="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                            <div className="footer-widget-two__column footer-widget-two__company">
+                                <div className="footer-widget-two__title-box">
+                                    <h3 className="footer-widget-two__title">Latest Blogs</h3>
+                                </div>
+                                <ul className="footer-widget-two__company-list list-unstyled">
+                                    <li><Link to="/premium">V_max Multilayered 4D Case 1</Link></li>
+                                    <li><Link to="/tax-strategy.html">Porcelain Fusedto 4D Case 1
+                                        </Link></li>
+                                    <li><a href="financial-advices.html">E_max Multilayered 4D Case 1
+                                        </a></li>
                                 </ul>
                             </div>
                         </div>
@@ -92,57 +109,6 @@ function PageFooter(){
                                     </div>
                                     <p className="footer-widget-two__work-time-text">Always Open </p>
                                 </div>
-                            </div>
-                        </div>
-                        <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
-                            <div className="footer-widget-two__column footer-widget-two__portfolio">
-                                <div className="footer-widget-two__title-box">
-                                    <h3 className="footer-widget-two__title">Latest Blog</h3>
-                                </div>
-                                <ul className="footer-widget-two__portfolio-list list-unstyled clearfix">
-                                    <li>
-                                        <div className="footer-widget-two__portfolio-img">
-                                            <img src={footer_widget_two_portfolio_img_1}
-                                                alt=""/>
-                                            <a href="#"><span className="fab fa-instagram"></span></a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="footer-widget-two__portfolio-img">
-                                            <img src={footer_widget_two_portfolio_img_1}
-                                                alt=""/>
-                                            <a href="#"><span className="fab fa-instagram"></span></a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="footer-widget-two__portfolio-img">
-                                            <img src={footer_widget_two_portfolio_img_1}
-                                                alt=""/>
-                                            <a href="#"><span className="fab fa-instagram"></span></a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="footer-widget-two__portfolio-img">
-                                            <img src={footer_widget_two_portfolio_img_1}
-                                                alt=""/>
-                                            <a href="#"><span className="fab fa-instagram"></span></a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="footer-widget-two__portfolio-img">
-                                            <img src={footer_widget_two_portfolio_img_1}
-                                                alt=""/>
-                                            <a href="#"><span className="fab fa-instagram"></span></a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="footer-widget-two__portfolio-img">
-                                            <img src={footer_widget_two_portfolio_img_1}
-                                                alt=""/>
-                                            <a href="#"><span className="fab fa-instagram"></span></a>
-                                        </div>
-                                    </li>
-                                </ul>
                             </div>
                         </div>
                     </div>

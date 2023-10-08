@@ -58,7 +58,7 @@ function EvantsSection(){
                                     </div>
                                     <div class="portfolio-one__arrow">
                                          <Fancybox>
-                                            <a data-fancybox href={portfolio_1_1} class="img-popup" ><span class="icon-top-right-1"></span></a>
+                                            <a  data-fancybox="gallery" href={portfolio_1_1} class="img-popup" ><span class="icon-top-right-1"></span></a>
                                          </Fancybox>
                                     </div>
                                 </div>

@@ -6,10 +6,6 @@ import portfolio_1_2 from '../../assets/images/project/portfolio-1-2.jpg';
 import portfolio_one_shape_1 from '../../assets/images/shapes/portfolio-one-shape-1.png'
 import portfolio_one_shape_2 from '../../assets/images/shapes/portfolio-one-shape-2.png'
 import portfolio_1_3 from '../../assets/images/project/portfolio-1-3.jpg'
-import {initLightboxJS} from 'lightbox.js-react'
-import 'lightbox.js-react/dist/index.css'
-import {SlideshowLightbox} from 'lightbox.js-react'
-import { useEffect, useState } from "react";
 
 
 
@@ -40,15 +36,6 @@ const options = {
 
 
 function Certification(){
-    useEffect(() => {
-        initLightboxJS("Insert your License Key here", "Insert plan type here");
-      }, []);
-      let [isOpen, setIsOpen] = useState(false);  
-      const images = [
-        {
-          src: 'https://source.unsplash.com/sQZ_A17cufs/549x711',
-        },
-    ]
     return(
       <section class="team-two">
         <div class="container">

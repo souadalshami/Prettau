@@ -6,7 +6,7 @@ import gold_logo from '../../assets/images/logo/gold.png';
 
 const locales = {
     en: { title: 'English' },
-    ar: { title: 'Arabic' },
+    // ar: { title: 'Arabic' },
   }; 
 
 
@@ -105,7 +105,7 @@ return(
                                         <NavLink exact="true" to="/certificates">Certificates</NavLink>
                                     </li>
                                     <li>
-                                        <NavLink exact="true" to="/video">Video</NavLink>
+                                        <NavLink exact="true" to="/video">Videos</NavLink>
                                     </li>
                                     <li>
                                         <NavLink exact="true" to="/contact">Contact</NavLink>
@@ -115,15 +115,15 @@ return(
                             <div className="main-menu__right">
                                 <div className="language">
                                     <ul className="main-menu__list">
-                                        <li className="dropdown">
+                                        <li>
                                             <a href="#">{i18n.resolvedLanguage.toUpperCase()}</a>
-                                            <ul className="sub-menu">
+                                            {/* <ul className="sub-menu">
                                                 {Object.keys(locales).map((locale) => (
                                                     <li key={locale}><a style={{ fontWeight: i18n.resolvedLanguage === locale ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(locale)}>
                                                         {locales[locale].title}
                                                     </a></li>
                                                 ))}
-                                            </ul>
+                                            </ul> */}
                                         </li>
                                     </ul>
                                 </div>

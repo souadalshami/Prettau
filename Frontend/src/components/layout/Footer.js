@@ -5,11 +5,14 @@ import site_footer_shape_2   from '../../assets/images/shapes/site-footer-shape-
 import footer_logo from  '../../assets/images/logo/black.png'
 import { Link } from 'react-router-dom';
 
-
+import WOW from 'wowjs';
+import { useEffect } from 'react'
 
 
 function Footer(){
-
+    useEffect(() => { 
+        new WOW.WOW({ live: false
+        }).init(); }, [])
     return(
         <footer className="site-footer">
             <div className="site-footer__shape-1 img-bounce">
@@ -41,12 +44,29 @@ function Footer(){
                                 </div>
                                 <ul className="footer-widget__company-list list-unstyled">
                                     <li><Link to="/premium">Premium</Link></li>
-                                    <li><a href="tax-strategy.html">Laser Implant
+                                    <li><a href="tax-strategy.html">Titanium
                                         </a></li>
-                                    <li><a href="financial-advices.html">Peek Polymer
+                                        <li><a href="tax-strategy.html">Zircon
                                         </a></li>
+                                    <li><a href="financial-advices.html">Laser Implant
+                                        </a></li>
+                                    <li><a href="insurance-strategy.html">Peek Polymer</a></li>
                                     <li><a href="insurance-strategy.html">Acrylic</a></li>
                                     <li><a href="insurance-strategy.html">Ortho</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                            <div className="footer-widget__column footer-widget__newsletter">
+                                <div className="footer-widget__title-box">
+                                    <h3 className="footer-widget__title">Latest Blog</h3>
+                                </div>
+                                <ul className="footer-widget__company-list list-unstyled">
+                                    <li><Link to="/productdetails">V_max Multilayered 4D Case 1</Link></li>
+                                    <li><Link to="/productdetails">Porcelain Fusedto 4D Case 1
+                                        </Link></li>
+                                        <li><Link to="/productdetails">E_max Multilayered 4D Case 1
+                                        </Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -84,25 +104,6 @@ function Footer(){
                                         </div>
                                     </li>
                                 </ul>
-                            </div>
-                        </div>
-                        <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
-                            <div className="footer-widget__column footer-widget__newsletter">
-                                <div className="footer-widget__title-box">
-                                    <h3 className="footer-widget__title">Newsletter</h3>
-                                </div>
-                                <p className="footer-widget__newsletter-text">Sign up for our latest news & articles. <br/>
-                                    We
-                                    won’t give you spam mails.</p>
-                                <form className="footer-widget__newsletter-form mc-form" data-url="MC_FORM_URL"
-                                    >
-                                    <div className="footer-widget__newsletter-form-input-box">
-                                        <input type="email" placeholder="Enter email address" name="EMAIL"/>
-                                        <button type="submit" className="footer-widget__newsletter-btn"><span
-                                                className="fas fa-paper-plane"></span></button>
-                                    </div>
-                                </form>
-                                <div className="mc-form__response"></div>
                             </div>
                         </div>
                     </div>

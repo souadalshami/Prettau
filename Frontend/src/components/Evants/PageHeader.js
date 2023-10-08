@@ -26,7 +26,7 @@ function PageHeader() {
       </div>
       <div className="container">
         <div className="page-header__inner">
-          <h2>Evants</h2>
+          <h2>Events</h2>
           <ul className="thm-breadcrumb list-unstyled">
             <li>
               <Link to="/">Home</Link>
@@ -34,7 +34,7 @@ function PageHeader() {
             <li>
               <span className="icon-down-arrow"></span>
             </li>
-            <li>Evants</li>
+            <li>Events</li>
           </ul>
         </div>
       </div>

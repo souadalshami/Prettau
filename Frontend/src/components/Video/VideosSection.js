@@ -2,14 +2,15 @@ import Fancybox from "../Fancybox.js";
  import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
+import Dubai from '../../assets/images/team/Dubai.jpg';
 export default function VideosSection() { 
 
     const options = {
-    "loop": true,
+    "loop": false,
     "autoplay": true,
     "margin": 30,
     "nav": true,
-    "dots": false,
+    "dots": true,
     "smartSpeed": 500,
     "autoplayTimeout": 10000,
     "navText": ["<span className=\"icon-right-arrow\"></span>","<span className=\"icon-right-arrow1\"></span>"],
@@ -35,22 +36,85 @@ return (
             <OwlCarousel class="team-carousel thm-owl__carousel owl-theme owl-carousel carousel-dot-style" {...options}>
                 <div class="item">
                     <div class="team-one__single">
-                        <div class="">
-                            <div class="">
-                                <Fancybox>
-                                <a data-fancybox href="https://www.youtube.com/watch?v=5iTqUp6Vuds"> 
-        <img class="card-img-top img-fluid" src="https://img.youtube.com/vi/PcqquLJSneU/mqdefault.jpg" /> 
-      </a>                            
-                                </Fancybox>
-                            </div>
-                            <div class="team-one__content">
+                        <Fancybox>
+                            <a data-fancybox href="https://www.youtube.com/watch?v=Cr9JyX-Bwlo">
+                                <img class="card-img-top img-fluid" src={Dubai} /> 
+                            </a>                            
+                        </Fancybox>
+                        <div class="team-one__content">
                             <h3 class="team-one__name">
-                                <a href="team-details.html">one Khanom</a>
-                            
+                                <a href="https://www.youtube.com/watch?v=Cr9JyX-Bwlo" target="_blank">AEEDC 2020</a>
                             </h3>
-                            <p class="team-one__sub-title">Founder and CEO</p>
-                            </div>
-                            
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="team-one__single">
+                        <Fancybox>
+                            <a data-fancybox href="https://www.youtube.com/watch?v=0slrHvSzt_s">
+                                <img class="card-img-top img-fluid" src={Dubai} /> 
+                            </a>                            
+                        </Fancybox>
+                        <div class="team-one__content">
+                            <h3 class="team-one__name">
+                                <a href="https://www.youtube.com/watch?v=0slrHvSzt_s" target="_blank">New year with Prettau</a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="team-one__single">
+                        <Fancybox>
+                            <a data-fancybox href="https://www.youtube.com/watch?v=5iTqUp6Vuds">
+                                <img class="card-img-top img-fluid" src={Dubai} /> 
+                            </a>                            
+                        </Fancybox>
+                        <div class="team-one__content">
+                            <h3 class="team-one__name">
+                                <a href="https://www.youtube.com/watch?v=5iTqUp6Vuds" target="_blank">E-MAX</a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="team-one__single">
+                        <Fancybox>
+                            <a data-fancybox href="https://www.youtube.com/watch?v=cxjBtN7uC-g">
+                                <img class="card-img-top img-fluid" src={Dubai} /> 
+                            </a>                            
+                        </Fancybox>
+                        <div class="team-one__content">
+                            <h3 class="team-one__name">
+                                <a href="https://www.youtube.com/watch?v=cxjBtN7uC-g" target="_blank">Zircon</a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="team-one__single">
+                        <Fancybox>
+                            <a data-fancybox href="https://www.youtube.com/watch?v=cxjBtN7uC-g">
+                                <img class="card-img-top img-fluid" src={Dubai} /> 
+                            </a>                            
+                        </Fancybox>
+                        <div class="team-one__content">
+                            <h3 class="team-one__name">
+                                <a href="https://www.youtube.com/watch?v=cxjBtN7uC-g" target="_blank">Zircon</a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="team-one__single">
+                        <Fancybox>
+                            <a data-fancybox href="https://www.youtube.com/watch?v=d9fh2NhFF_Y&t=7s">
+                                <img class="card-img-top img-fluid" src={Dubai} /> 
+                            </a>                            
+                        </Fancybox>
+                        <div class="team-one__content">
+                            <h3 class="team-one__name">
+                                <a href="https://www.youtube.com/watch?v=d9fh2NhFF_Y&t=7s" target="_blank">Soon in AEEDC</a>
+                            </h3>
                         </div>
                     </div>
                 </div>

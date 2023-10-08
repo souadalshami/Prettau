@@ -8,6 +8,7 @@ import Blogs from '../components/Home/Blogs';
 import { useDocumentTitle } from '../setDocumentTitle';
 import Brand from '../components/Home/Brand';
 import Products from '../components/Home/Products';
+import Contact from '../components/Home/Contact';
 
 function Home(){
   useDocumentTitle("Home || Prettau Dental Lab");
@@ -16,11 +17,12 @@ function Home(){
     <div>
         <Header/>
         <MainSlider/>
-        <Features/>
+        {/* <Features/> */}
         <AboutUs/>
+        <Products/>
+        <Contact/>
         <Blogs/>
         <Brand/>
-        {/* <Products/> */}
         <Footer/>
         
     </div>
