@@ -62,3 +62,15 @@ background-color: #f3920e2b !important;
  .hight .testimonial-two__single {
      margin-top: 40px;
  }
+
+ .services-one__content {
+  margin-left: 0px !important;
+}
+
+.services-one__single-hover-bg::before {
+  content: "";
+
+  background: gray !important;
+
+
+}

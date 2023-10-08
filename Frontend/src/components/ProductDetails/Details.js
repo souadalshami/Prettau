@@ -1,5 +1,10 @@
 import services_details_img_1 from '../../assets/images/services/services-details-img-1.jpg';
 import services_details_img_2 from '../../assets/images/services/services-details-img-2.jpg';
+import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
+// import ImageSlider from "react-image-comparison-slider";
+import before from '../../assets/images/resources/before.jpg'
+import after from '../../assets/images/resources/after.jpg'
+import { Link } from 'react-router-dom';
 
 function Details(){
 
@@ -12,26 +17,26 @@ function Details(){
                             <div class="services-details__services-box">
                                 <ul class="services-details__services-list list-unstyled">
                                     <li class="active">
-                                        <a href="business-audit.html"> Audit<span class="icon-right-arrow1"></span></a>
+                                        <a to="/ProductDetails"> Audit<span class="icon-right-arrow1"></span></a>
                                     </li>
                                     <li>
-                                        <a href="business-planning.html">Business Planning<span
-                                                class="icon-right-arrow1"></span></a>
+                                        <Link to="/premium">Business Planning<span
+                                                class="icon-right-arrow1"></span></Link>
                                     </li>
                                     <li>
-                                        <a href="financial-advices.html">Financial Advices<span
-                                                class="icon-right-arrow1"></span></a>
+                                        <Link to="/premium">Financial Advices<span
+                                                class="icon-right-arrow1"></span></Link>
                                     </li>
                                     <li>
-                                        <a href="tax-strategy.html">Tax Strategy<span
-                                                class="icon-right-arrow1"></span></a>
+                                        <Link to="/premium">Tax Strategy<span
+                                                class="icon-right-arrow1"></span></Link>
                                     </li>
                                     <li>
-                                        <a href="insurance-strategy.html">Insurance Strategy<span
-                                                class="icon-right-arrow1"></span></a>
+                                        <Link to="/premium">Insurance Strategy<span
+                                                class="icon-right-arrow1"></span></Link>
                                     </li>
                                     <li>
-                                        <a href="start-ups.html">Start Ups<span class="icon-right-arrow1"></span></a>
+                                        <Link to="/premium">Start Ups<span class="icon-right-arrow1"></span></Link>
                                     </li>
                                 </ul>
                             </div>
@@ -54,7 +59,7 @@ function Details(){
                                         <div class="icon">
                                             <span class="icon-envelope"></span>
                                         </div>
-                                        <p><a href="Prettau.ptrettau@gmail.com">Prettau.ptrettau@gmail.com</a></p>
+                                        <p><a href="mailto:Prettau.ptrettau@gmail.com">Prettau.ptrettau@gmail.com</a></p>
                                     </li>
                                     <li>
                                         <div class="icon">
@@ -69,8 +74,20 @@ function Details(){
                     <div class="col-xl-9 col-lg-8">
                         <div class="services-details__right">
                             <div class="services-details__img">
-                                <img src={services_details_img_1}  alt=""/>
+                              
+                                 <div  style={ {width:"100%" }}>
+                                 <ReactCompareSlider
+                                    itemOne={<ReactCompareSliderImage src={before} srcSet={before} leftlaba alt="Image one" />} 
+                                    itemTwo={<ReactCompareSliderImage src={after} srcSet={after} alt="Image two" />}
+                                    />
+                                    </div>  
+                              
+
+
+                                    
                             </div>
+
+                        
                             <h3 class="services-details__title-1">Prettau V-MAX Veneer </h3>
                             <p class="services-details__text-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim

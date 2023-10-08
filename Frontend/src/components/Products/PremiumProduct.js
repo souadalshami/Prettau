@@ -18,32 +18,32 @@ function Premium(){
                                 </div>
                                 <ul class="sidebar__category-list list-unstyled">
                                     <li>
-                                        <a href="news-details.html">Titanium<span
-                                                class="icon-right-arrow1"></span></a>
+                                        <Link to="/premium">Titanium<span
+                                                class="icon-right-arrow1"></span></Link>
                                     </li>
                                     <li>
-                                        <a href="news-details.html">Zircon<span
-                                                class="icon-right-arrow1"></span></a>
+                                        <Link to="/premium">Zircon<span
+                                                class="icon-right-arrow1"></span></Link>
                                     </li>
                                     <li>
-                                        <a href="news-details.html">Laser Implant<span
-                                                class="icon-right-arrow1"></span></a>
+                                        <Link to="/premium">Laser Implant<span
+                                                class="icon-right-arrow1"></span></Link>
                                     </li>
                                     <li>
-                                        <a href="news-details.html">Peek Polymer<span
-                                                class="icon-right-arrow1"></span></a>
+                                        <Link to="/premium">Peek Polymer<span
+                                                class="icon-right-arrow1"></span></Link>
                                     </li>
                                     <li>
-                                        <a href="news-details.html">Acrylic<span
-                                                class="icon-right-arrow1"></span></a>
+                                        <Link to="/premium">Acrylic<span
+                                                class="icon-right-arrow1"></span></Link>
                                     </li>
                                     <li>
-                                        <a href="news-details.html">Ortho<span
-                                                class="icon-right-arrow1"></span></a>
+                                        <Link to="/premium">Ortho<span
+                                                class="icon-right-arrow1"></span></Link>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="sidebar__single sidebar__post">
+                            {/* <div class="sidebar__single sidebar__post">
                                 <div class="sidebar__title-box">
                                     <h3 class="sidebar__title">Recent Post</h3>
                                 </div>
@@ -53,8 +53,8 @@ function Premium(){
                                             <img src={news_lp_1} alt=""/>
                                         </div>
                                         <div class="sidebar__post-content">
-                                            <h3 class="sidebar__post-title"><a href="news-details.html">We would love to
-                                                    share a similar experience</a></h3>
+                                            <h3 class="sidebar__post-title"><Link to="/premium">We would love to
+                                                    share a similar experience</Link></h3>
                                             <p class="sidebar__post-date"><span class="icon-time"></span>10 Oct, 2022
                                             </p>
                                         </div>
@@ -64,8 +64,8 @@ function Premium(){
                                             <img src={news_lp_1} alt=""/>
                                         </div>
                                         <div class="sidebar__post-content">
-                                            <h3 class="sidebar__post-title"><a href="news-details.html">We would love to
-                                                    share a similar experience</a></h3>
+                                            <h3 class="sidebar__post-title"><Link to="/premium">We would love to
+                                                    share a similar experience</Link></h3>
                                             <p class="sidebar__post-date"><span class="icon-time"></span>10 Oct, 2022
                                             </p>
                                         </div>
@@ -75,8 +75,8 @@ function Premium(){
                                             <img src={"assets/images/blog/news-lp-3.jpg"} alt=""/>
                                         </div>
                                         <div class="sidebar__post-content">
-                                            <h3 class="sidebar__post-title"><a href="news-details.html">We would love to
-                                                    share a similar experience</a></h3>
+                                            <h3 class="sidebar__post-title"><Link to="/premium">We would love to
+                                                    share a similar experience</Link></h3>
                                             <p class="sidebar__post-date"><span class="icon-time"></span>10 Oct, 2022
                                             </p>
                                         </div>
@@ -86,14 +86,14 @@ function Premium(){
                                             <img src="assets/images/blog/news-lp-4.jpg" alt=""/>
                                         </div>
                                         <div class="sidebar__post-content">
-                                            <h3 class="sidebar__post-title"><a href="news-details.html">We would love to
-                                                    share a similar experience</a></h3>
+                                            <h3 class="sidebar__post-title"><Link to="/premium">We would love to
+                                                    share a similar experience</Link></h3>
                                             <p class="sidebar__post-date"><span class="icon-time"></span>10 Oct, 2022
                                             </p>
                                         </div>
                                     </li>
                                 </ul>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                     <div class="col-xl-8 col-lg-7">
@@ -126,7 +126,7 @@ function Premium(){
                                     <div class="news-one__content">
                                         <div class="news-one__content-top">
                                             <p class="news-one__sub-title">E_max Premium</p>
-                                            <h3 class="news-one__title"><a href="news-details.html">E_max Multilayered 4D Case 1</a></h3>
+                                            <h3 class="news-one__title"><Link to="/premium">E_max Multilayered 4D Case 1</Link></h3>
                                             <p class="news-one__text">Lorem Ipsum is simply dummy text of the printing
                                                 and
                                                 typesetting industry...</p>
@@ -144,7 +144,7 @@ function Premium(){
                                     <div class="news-one__content">
                                         <div class="news-one__content-top">
                                             <p class="news-one__sub-title">Zircon Premium</p>
-                                            <h3 class="news-one__title"><a href="news-details.html">Zircon Pemium Multilayered 4D Case 1</a></h3>
+                                            <h3 class="news-one__title"><Link to="/ProductDetails">Zircon Pemium Multilayered 4D Case 1</Link></h3>
                                             <p class="news-one__text">Lorem Ipsum is simply dummy text of the printing
                                                 and
                                                 typesetting industry...</p>
@@ -162,7 +162,7 @@ function Premium(){
                                     <div class="news-one__content">
                                         <div class="news-one__content-top">
                                             <p class="news-one__sub-title">Ceramic Premium</p>
-                                            <h3 class="news-one__title"><a href="news-details.html">Ceramic Pemium Multilayered 4D Case 1</a></h3>
+                                            <h3 class="news-one__title"><Link to="/ProductDetails">Ceramic Pemium Multilayered 4D Case 1</Link></h3>
                                             <p class="news-one__text">Lorem Ipsum is simply dummy text of the printing
                                                 and
                                                 typesetting industry...</p>
