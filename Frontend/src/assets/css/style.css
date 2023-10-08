@@ -41,3 +41,24 @@ img{
 .main-slider__title{
     text-transform: unset;
 }
+.section-title__tagline::before {
+background-color: #f3920e2b !important;
+ 
+}
+
+.about-two__left {
+  position: relative;
+  display: block;
+  margin-left: 0px !important;
+  margin-top: 47px;
+}
+
+.services-details__feature_two{
+      margin-left: 0px !important;
+      margin-right: 30px !important;
+
+}
+
+ .hight .testimonial-two__single {
+     margin-top: 40px;
+ }
