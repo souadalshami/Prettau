@@ -29,3 +29,30 @@ img{
     padding: 8px !important;
     min-width: 140px !important;
 }
+.section-title__tagline::before {
+background-color: #f3920e2b !important;
+ 
+}
+
+.about-two__left {
+  position: relative;
+  display: block;
+  margin-left: 0px !important;
+  margin-top: 47px;
+}
+
+.services-details__feature_two{
+      margin-left: 0px !important;
+      margin-right: 30px !important;
+
+}
+
+.hight{
+    /* background-color: red !important; */
+    /* height: 100vh !important; */
+}
+
+ .hight .testimonial-two__single {
+     /* background-color: rgb(119, 255, 0) !important; */
+     margin-top: 40px;
+ }
