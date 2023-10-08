@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import background from "../../assets/images/backgrounds/page-header-bg.jpg";
 import page_header_shape_1 from "../../assets/images/shapes/page-header-shape-1.png";
 import page_header_shape_2 from "../../assets/images/shapes/page-header-shape-2.png";
@@ -28,7 +29,7 @@ function PageHeader() {
           <h2>Videos</h2>
           <ul className="thm-breadcrumb list-unstyled">
             <li>
-              <a href="index.html">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
               <span className="icon-down-arrow"></span>

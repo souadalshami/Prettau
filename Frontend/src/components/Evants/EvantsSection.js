@@ -34,7 +34,6 @@ import shapetwo from "../../assets/images/shapes/portfolio-one-shape-2.png"
 function EvantsSection(){
 
     return(
-        // <section class="portfolio-one">
         <section class="portfolio-one" >
             <div class="portfolio-one__shape-1 float-bob-x">
                 <img src={shapeone} alt="" />

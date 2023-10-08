@@ -3,6 +3,7 @@ import page_header_shape_1 from "../../assets/images/shapes/page-header-shape-1.
 import page_header_shape_2 from "../../assets/images/shapes/page-header-shape-2.png";
 import page_header_shape_3 from "../../assets/images/shapes/page-header-shape-3.png";
 import page_header_shape_4 from "../../assets/images/shapes/page-header-shape-4.png";
+import { Link } from 'react-router-dom'
 
 function PageHeader() {
   return (
@@ -28,7 +29,7 @@ function PageHeader() {
           <h2>Evants</h2>
           <ul className="thm-breadcrumb list-unstyled">
             <li>
-              <a href="index.html">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
               <span className="icon-down-arrow"></span>
