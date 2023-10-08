@@ -2,14 +2,7 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css"
 import team_2_1 from '../../assets/images/team/team-2-1.jpg';
-import portfolio_1_2 from '../../assets/images/project/portfolio-1-2.jpg';
-import portfolio_one_shape_1 from '../../assets/images/shapes/portfolio-one-shape-1.png'
-import portfolio_one_shape_2 from '../../assets/images/shapes/portfolio-one-shape-2.png'
-import portfolio_1_3 from '../../assets/images/project/portfolio-1-3.jpg'
-import {initLightboxJS} from 'lightbox.js-react'
-import 'lightbox.js-react/dist/index.css'
-import {SlideshowLightbox} from 'lightbox.js-react'
-import { useEffect, useState } from "react";
+
 import Fancybox from "../Fancybox"; 
 
 

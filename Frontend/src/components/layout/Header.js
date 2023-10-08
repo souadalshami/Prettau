@@ -89,12 +89,12 @@ return(
                                         <a href="#">Products</a>
                                         <ul className="sub-menu">
                                             <li><Link to="/premium">Premium</Link></li>
-                                            <li><a href="services-carousel.html">Titanium</a></li>
-                                            <li><a href="business-audit.html">Zircon</a></li>
-                                            <li><a href="business-planning.html">Laser Implant</a></li>
-                                            <li><a href="financial-advices.html">Peek Polymer</a></li>
-                                            <li><a href="tax-strategy.html">Acrylic</a></li>
-                                            <li><a href="insurance-strategy.html">Ortho</a></li>
+                                            <li><Link to="/premium">Titanium</Link></li>
+                                            <li><Link to="/premium">Zircon</Link></li>
+                                            <li><Link to="/premium">Laser Implant</Link></li>
+                                            <li><Link to="/premium">Peek Polymer</Link></li>
+                                            <li><Link to="/premium">Acrylic</Link></li>
+                                            <li><Link to="/premium">Ortho</Link></li>
                                         </ul>
                                     </li>
 

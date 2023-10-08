@@ -16,9 +16,9 @@ function Counter(){
                             </div>
                             <div className="counter-one__count count-box">
                                 <h3 className="count-text" data-stop="10" data-speed="1500">
-                                          <CountUp
-                                    end={11}
-                                    duration={2}
+                                 <CountUp
+                                    end={9}
+                                    duration={9}
                                     enableScrollSpy
                                     scrollSpyOnce
                                      />
@@ -33,11 +33,12 @@ function Counter(){
                             <div className="counter-one__count count-box">
                                 <h3 className="count-text" data-stop="89" data-speed="1500">
                                   <CountUp
-                                    end={77}
-                                    duration={2}
+                                    end={350}
+                                    duration={25}
                                     enableScrollSpy
                                     scrollSpyOnce
                                      />
+                                     <span>+</span>
                                 </h3>
                             </div>
                             <p className="counter-one__text">Team members</p>
@@ -49,13 +50,13 @@ function Counter(){
                             <div className="counter-one__count count-box">
                                 <h3 className="count-text" data-stop="789" data-speed="1500">
                                 <CountUp
-                                    end={60}
-                                    duration={2}
+                                    end={40}
+                                    duration={11}
                                     enableScrollSpy
                                     scrollSpyOnce
                                 />
                                 </h3>
-                                <span>+</span>
+                                <span>K</span>
                             </div>
                             <p className="counter-one__text">Successful Projects</p>
                         </li>
@@ -66,13 +67,13 @@ function Counter(){
                             <div className="counter-one__count count-box">
                                 <h3 className="count-text" data-stop="650" data-speed="1500">
                                  <CountUp
-                                    end={150}
-                                    duration={2}
+                                    end={30}
+                                    duration={10}
                                     enableScrollSpy
                                     scrollSpyOnce
                         />
                                 </h3>
-                                <span>+</span>
+                                <span>K</span>
                             </div>
                             <p className="counter-one__text">Satisfied Clients</p>
                         </li>
