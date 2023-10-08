@@ -31,7 +31,7 @@ function App() {
     <>
       <div>
         <div className="page-wrapper">
-          <Router>
+          <Router basename='/Prettau'>
             <ScrollToTop />
             <Routes>
               <Route path="/" element={<Home />} />
