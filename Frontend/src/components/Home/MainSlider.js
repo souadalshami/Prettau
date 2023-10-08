@@ -5,6 +5,7 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import { Link } from 'react-router-dom';
+import Fancybox from "../Fancybox.js"; 
 
 function MainSlider(){
 
@@ -12,11 +13,11 @@ function MainSlider(){
         <section className="main-slider">
             <OwlCarousel className="main-slider__carousel owl-carousel owl-theme thm-owl__carousel"
                 items={1}
-                loop
+                // loop
                 dots
                 margin={0}
                 nav={false}
-                // autoplay
+                autoplay
                 autoplayTimeout={7000}
                 smartSpeed= {1000}
                 
@@ -41,13 +42,15 @@ function MainSlider(){
                                     <Link to="/contact" className="thm-btn main-slider__btn">Get Consulting</Link>
                                 </div>
                                 <div className="main-slider__video-link">
-                                    <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" className="video-popup">
+                              <Fancybox>
+                                <a data-fancybox href="https://www.youtube.com/watch?v=Get7rqXYrbQ" className="video-popup">
                                         <div className="main-slider__video-icon">
                                             <span className="fa fa-play"></span>
                                             <i className="ripple"></i>
                                         </div>
                                     </a>
                                     <h4 className="main-slider__video-text">Watch Video</h4>
+                                </Fancybox>
                                 </div>
                             </div>
                         </div>
@@ -72,15 +75,6 @@ function MainSlider(){
                                 <div className="main-slider__btn-box">
                                     <a href="contact.html" className="thm-btn main-slider__btn">Get Consulting</a>
                                 </div>
-                                <div className="main-slider__video-link">
-                                    <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" className="video-popup">
-                                        <div className="main-slider__video-icon">
-                                            <span className="fa fa-play"></span>
-                                            <i className="ripple"></i>
-                                        </div>
-                                    </a>
-                                    <h4 className="main-slider__video-text">Watch Video</h4>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -103,15 +97,6 @@ function MainSlider(){
                             <div className="main-slider__btn-and-video-box">
                                 <div className="main-slider__btn-box">
                                     <a href="contact.html" className="thm-btn main-slider__btn">Get Consulting</a>
-                                </div>
-                                <div className="main-slider__video-link">
-                                    <a href="https://www.youtube.com/watch?v=Get7rqXYrbQ" className="video-popup">
-                                        <div className="main-slider__video-icon">
-                                            <span className="fa fa-play"></span>
-                                            <i className="ripple"></i>
-                                        </div>
-                                    </a>
-                                    <h4 className="main-slider__video-text">Watch Video</h4>
                                 </div>
                             </div>
                         </div>

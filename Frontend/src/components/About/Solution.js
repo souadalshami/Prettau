@@ -1,7 +1,7 @@
 import about_two_shape_2 from '../../assets/images/shapes/about-two-shape-2.png'
 import about_two_shape_3 from '../../assets/images/shapes/about-two-shape-3.png'
 import about_two_img_1 from '../../assets/images/resources/about-two-img-1.jpg'
-
+import CountUp from "react-countup";
 
 function Solution(){
 
@@ -23,13 +23,26 @@ function Solution(){
                             <ul className="about-two__points list-unstyled">
                                 <li>
                                     <div className="about-two__count count-box">
-                                        <h3 className="count-text" data-stop="10" data-speed="1500">00</h3>
+                                        <h3 className="count-text" data-stop="10" data-speed="1500">
+                                            <CountUp
+                                                end={150}
+                                                duration={3}
+                                                enableScrollSpy
+                                                scrollSpyOnce
+                                            /></h3>
                                     </div>
                                     <p>Years Of <br/> Experience</p>
                                 </li>
                                 <li>
                                     <div className="about-two__count count-box">
-                                        <h3 className="count-text" data-stop="8" data-speed="1500">00</h3>
+                                        <h3 className="count-text" data-stop="8" data-speed="1500">
+                                             <CountUp
+                                                end={90}
+                                                duration={3}
+                                                enableScrollSpy
+                                                scrollSpyOnce
+                                            />
+                                        </h3>
                                         <span>k</span>
                                     </div>
                                     <p>Completed <br/> project</p>

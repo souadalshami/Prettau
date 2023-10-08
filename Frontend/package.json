@@ -21,6 +21,7 @@
     "magnific-popup": "^1.1.0",
     "react": "^18.2.0",
     "react-compare-slider": "^2.2.0",
+    "react-countup": "^6.4.2",
     "react-dom": "^18.2.0",
     "react-fancybox": "^0.2.5",
     "react-i18next": "^13.2.2",
