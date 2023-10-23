@@ -1,6 +1,7 @@
 
 import background from '../../assets/images/backgrounds/counter-one-bg.png'
 import CountUp from "react-countup";
+import { t } from "i18next";
 
 function Counter(){
 
@@ -21,10 +22,11 @@ function Counter(){
                                     duration={9}
                                     enableScrollSpy
                                     scrollSpyOnce
-                                     />
+                                  />
                                 </h3>
                             </div>
-                            <p className="counter-one__text">Years of Experience</p>
+                            <p className="counter-one__text">{t('about-counter-experience')}
+                            </p>
                         </li>
                         <li>
                             <div className="counter-one__icon">
@@ -37,11 +39,12 @@ function Counter(){
                                     duration={25}
                                     enableScrollSpy
                                     scrollSpyOnce
-                                     />
+                                   />
                                      <span>+</span>
                                 </h3>
                             </div>
-                            <p className="counter-one__text">Team members</p>
+                            <p className="counter-one__text">{t('about-counter-members')}
+                            </p>
                         </li>
                         <li>
                             <div className="counter-one__icon">
@@ -56,9 +59,13 @@ function Counter(){
                                     scrollSpyOnce
                                 />
                                 </h3>
-                                <span>K</span>
+                                <span>
+                                    {t('about-solution-k')}
+                                </span>
                             </div>
-                            <p className="counter-one__text">Successful Projects</p>
+                            <p className="counter-one__text">
+                                {t('about-counter-Successful')}
+                            </p>
                         </li>
                         <li>
                             <div className="counter-one__icon">
@@ -71,11 +78,13 @@ function Counter(){
                                     duration={10}
                                     enableScrollSpy
                                     scrollSpyOnce
-                        />
+                                  />
                                 </h3>
-                                <span>K</span>
+                                <span>{t('about-solution-k')}</span>
                             </div>
-                            <p className="counter-one__text">Satisfied Clients</p>
+                            <p className="counter-one__text">
+                                {t('about-counter-satisfied')}
+                            </p>
                         </li>
                     </ul>
                 </div>

@@ -2,8 +2,9 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css"
 import team_2_1 from '../../assets/images/team/team-2-1.jpg';
-
 import Fancybox from "../Fancybox"; 
+import { useTranslation } from "react-i18next";
+import { Trans } from 'react-i18next';
 
 
 const options = {
@@ -33,54 +34,43 @@ const options = {
 
 
 function Certification(){
+   const { t } = useTranslation();
+
     return(
       <section class="team-two">
         <div class="container">
             <div class="row">
                 <div class="col-xl-4">
-                    <div class="team-two__left">
-                        <h3 class="section__title-two">Meet our team of creative experts</h3>
+                    <div class="team-two__left" >
+                        <h3 class="section__title-two"> {t('Certificates')}</h3>
                         <p class="team-two__text">
-                          Lorem ipsum dolor sit amet labore et consectetuer adipiscing elit
-                            sed do eiusmod tempor incididunt.</p>
+                        <Trans i18nKey="certificates-description"></Trans>
+                        </p>
                     </div>
                 </div>
                 <div class="col-xl-8">
-                    <div class="team-two__right">
+                    <div className= {"team-two__right"} >
                           <OwlCarousel class="team-two__carousel owl-carousel owl-theme thm-owl__carousel" {...options}>
                            <div class="item">
                                 <div class="team-two__single">
-                                 
                                     <Fancybox>
                                         <a data-fancybox href={team_2_1} class="img-popup" >
                                           <div   class="team-two__img-box">
-                                           <div class="team-two__img">
+                                                <div class="team-two__img">
                                                    <img data-fancybox  src={team_2_1} alt=""/>
+                                                 </div>
                                            </div>
-                                           </div>
-                                          </a>
+                                        </a>
                                     </Fancybox>
-                                           
-                                    
-                                          
-                                    
                                     <div class="team-two__content">
                                         <div class="team-two__name-box">
                                             <h3 class="team-two__name">Abral Asha
                                             </h3>
                                             <p class="team-two__sub-title">Co-Founder</p>
                                         </div>
-                             
                                     </div>
                                 </div>
                             </div>
-                        
-                           
-                       
-                         
-                           
-                            
-                          
                         </OwlCarousel>
                     </div>
                 </div>

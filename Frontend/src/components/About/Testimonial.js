@@ -3,6 +3,8 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
 import testimonial_1 from '../../assets/images/testimonial/testimonial-1-1.jpg'
+import { t } from "i18next";
+import { Trans } from 'react-i18next';
 
 const options = {
     "loop": true,
@@ -33,23 +35,20 @@ function Testimonial(){
     return(
         <section className="testimonial-two testimonial-four">
             <div className="container">
-                <h3 className="section__title-two">People talking about us</h3>
+                <h3 className="section__title-two">{t('about-testimonial-title')}</h3>
                 <div className="testimonial-two__bottom">
                     <OwlCarousel classNameName="testimonial-two__carousel owl-carousel owl-theme thm-owl__carousel " {...options}>
                         <div className="hight">
-                    {/* <div classNameName="testimonial-two__carousel owl-carousel owl-theme thm-owl__carousel"> */}
-                      <div className="testimonial-two__single">
+                         <div className="testimonial-two__single">
                           <div className="testimonial-two__client-img">
                                 
                                 <img src={testimonial_1} alt=""/>
                             </div>
                             <div className="testimonial-two__client-info">
-                                <h3>Jacob Jones</h3>
-                                <p>certificate of compliance</p>
+                                <h3>{t('about-testimonial-name')}</h3>
+                                <p>{t('about-testimonial-name-description')}</p>
                             </div>
-                            <p className="testimonial-two__text">"I am really satisfied with it. I'm good to go. It really
-                                saves me time and effort. Lorem Ipsum is simply dummy text of the printing and
-                                typesetting industry."</p>
+                            <p className="testimonial-two__text">{t('about-testimonial-description')}</p>
                             <div className="testimonial-two__ratting">
                                 <span className="icon-star-1"></span>
                                 <span className="icon-star-1"></span>
@@ -58,28 +57,7 @@ function Testimonial(){
                                 <span className="icon-star-1"></span>
                             </div>
                         </div>
-
-</div>
-                        {/* <div className="testimonial-two__single">
-                            <div className="testimonial-two__client-img">
-                                <img src={testimonial_1} alt=""/>
-                            </div>
-                            <div className="testimonial-two__client-info">
-                                
-                                <h3>Jacob Jones</h3>
-                                <p>CEO & Co-Founder</p>
-                            </div>
-                            <p className="testimonial-two__text">"I am really satisfied with it. I'm good to go. It really
-                                saves me time and effort. Lorem Ipsum is simply dummy text of the printing and
-                                typesetting industry."</p>
-                            <div className="testimonial-two__ratting">
-                                <span className="icon-star-1"></span>
-                                <span className="icon-star-1"></span>
-                                <span className="icon-star-1"></span>
-                                <span className="icon-star-1"></span>
-                                <span className="icon-star-1"></span>
-                            </div>
-                        </div> */}
+                    </div>
                     </OwlCarousel>
                 </div>
             </div>

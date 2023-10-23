@@ -650,7 +650,7 @@ ul {
   transition: all 500ms ease;
 }
 
-.main-header__social a+a {
+.main-header__social a {
   margin-left: 25px;
 }
 
@@ -695,6 +695,7 @@ ul {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: auto;  
   z-index: 1;
 }
 
@@ -742,6 +743,7 @@ ul {
   color: var(--bixola-white);
 }
 
+/* call arabic */
 .main-menu__call-content {
   margin-left: 10px;
   top: 3px;
@@ -796,6 +798,7 @@ ul {
 .stricky-header .main-menu__list>li>ul>li>ul {
   margin: 0;
   padding: 0;
+  
   list-style-type: none;
   -webkit-box-align: center;
   -ms-flex-align: center;

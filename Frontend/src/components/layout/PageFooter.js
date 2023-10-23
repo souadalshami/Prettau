@@ -1,9 +1,9 @@
 
 import  site_footer_two_shape_1  from '../../assets/images/shapes/site-footer-two-shape-1.png'
-import  footer_logo_2  from '../../assets/images/resources/footer-logo-2.png'
 import site_footer_two_shape_2 from '../../assets/images/shapes/site-footer-two-shape-2.png'
-import    footer_widget_two_portfolio_img_1  from '../../assets/images/project/footer-widget-two-portfolio-img-1.jpg';
 import logo from '../../assets/images/logo/white.png'
+import { t } from "i18next";
+import { Trans } from 'react-i18next';
 
 
 
@@ -37,7 +37,7 @@ function PageFooter(){
                                 <div className="footer-widget-two__logo">
                                     <Link to="/"><img src={logo} alt=""   /></Link>
                                 </div>
-                                <p className="footer-widget-two__about-text">Provides the integrated solutions for all Dental<br/> Prosthetics in parallel with the high <br/> technology around the world</p>
+                                <p className="footer-widget-two__about-text"><Trans i18nKey="footer-description"></Trans></p>
                                 <div className="site-footer-two__social">
                                     <a href="https://www.facebook.com/prettau2011" target='_blank'><i className="fab fa-facebook"></i></a>
                                     <a href="https://www.youtube.com/channel/UCfTmPFfWHlAIOwnlLMa7igw" target='_blank'><i className="fab fa-youtube"></i></a>
@@ -48,7 +48,7 @@ function PageFooter(){
                         <div className="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                             <div className="footer-widget-two__column footer-widget-two__company">
                                 <div className="footer-widget-two__title-box">
-                                    <h3 className="footer-widget-two__title">Products</h3>
+                                    <h3 className="footer-widget-two__title">{t('products')}</h3>
                                 </div>
                                 <ul className="footer-widget-two__company-list list-unstyled">
                                     <li><Link to="/premium">Premium</Link></li>
@@ -67,7 +67,7 @@ function PageFooter(){
                         <div className="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                             <div className="footer-widget-two__column footer-widget-two__company">
                                 <div className="footer-widget-two__title-box">
-                                    <h3 className="footer-widget-two__title">Latest Blogs</h3>
+                                    <h3 className="footer-widget-two__title">{t('footer-latest-blogs')}</h3>
                                 </div>
                                 <ul className="footer-widget-two__company-list list-unstyled">
                                     <li><Link to="/premium">V_max Multilayered 4D Case 1</Link></li>
@@ -81,20 +81,20 @@ function PageFooter(){
                         <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
                             <div className="footer-widget-two__column footer-widget-two__contact">
                                 <div className="footer-widget-two__title-box">
-                                    <h3 className="footer-widget-two__title">Contact info</h3>
+                                    <h3 className="footer-widget-two__title">{t('footer-contact-info')}</h3>
                                 </div>
                                 <ul className="footer-widget-two__contact-list list-unstyled">
                                     <li>
                                         <div className="icon">
                                             <span className="icon-location-1"></span>
                                         </div>
-                                        <p> 60 th St, Sulimaniyah. Iraq</p>
+                                        <p> {t('location')}</p>
                                     </li>
                                     <li>
                                         <div className="icon">
                                             <span className="icon-phone"></span>
                                         </div>
-                                        <p><a href="tel:+9647700372464">+964 (770) 037-2464</a></p>
+                                        <p><a dir='ltr' href="tel:+9647700372464">+964 (770) 037-2464</a></p>
                                     </li>
                                     <li>
                                         <div className="icon">
@@ -105,9 +105,9 @@ function PageFooter(){
                                 </ul>
                                 <div className="footer-widget-two__work-time">
                                     <div className="footer-widget-two__title-box">
-                                        <h3 className="footer-widget-two__title">Working Time</h3>
+                                        <h3 className="footer-widget-two__title">{t('footer-working-time')}</h3>
                                     </div>
-                                    <p className="footer-widget-two__work-time-text">Always Open </p>
+                                    <p className="footer-widget-two__work-time-text">{t('open_time')} </p>
                                 </div>
                             </div>
                         </div>
@@ -117,7 +117,7 @@ function PageFooter(){
             <div className="site-footer-two__bottom">
                 <div className="container">
                     <div className="site-footer-two__bottom-inner">
-                        <p className="site-footer__bottom-text">© Copyright Prettau 2023. All rights reserved.</p>
+                        <p className="site-footer__bottom-text">{t('footer-Copyright')}</p>
                     </div>
                 </div>
             </div>

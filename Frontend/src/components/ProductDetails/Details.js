@@ -1,10 +1,10 @@
-import services_details_img_1 from '../../assets/images/services/services-details-img-1.jpg';
 import services_details_img_2 from '../../assets/images/services/services-details-img-2.jpg';
 import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
 // import ImageSlider from "react-image-comparison-slider";
 import before from '../../assets/images/resources/before.jpg'
 import after from '../../assets/images/resources/after.jpg'
 import { Link } from 'react-router-dom';
+import { t } from "i18next";
 
 function Details(){
 
@@ -41,7 +41,7 @@ function Details(){
                                 </ul>
                             </div>
                             <div class="services-details__contact">
-                                <h3 class="services-details__contact-title">Contact us</h3>
+                                <h3 class="services-details__contact-title">{t('contact')}</h3>
                                 <ul class="services-details__contact-list list-unstyled">
                                     <li>
                                         <div class="icon">
@@ -53,7 +53,7 @@ function Details(){
                                         <div class="icon">
                                             <span class="icon-phone"></span>
                                         </div>
-                                        <p><a href="tel:+9647700372464">+964 (770) 037-2464</a></p>
+                                        <p><a dir='ltr' href="tel:+9647700372464">+964 (770) 037-2464</a></p>
                                     </li>
                                     <li>
                                         <div class="icon">
@@ -65,7 +65,7 @@ function Details(){
                                         <div class="icon">
                                             <span class="icon-time"></span>
                                         </div>
-                                        <p>Always Open</p>
+                                        <p>{t('open_time')}</p>
                                     </li>
                                 </ul>
                             </div>
@@ -74,20 +74,13 @@ function Details(){
                     <div class="col-xl-9 col-lg-8">
                         <div class="services-details__right">
                             <div class="services-details__img">
-                              
-                                 <div  style={ {width:"100%" }}>
-                                 <ReactCompareSlider
+                                <div  style={ {width:"100%"}}>
+                                 <ReactCompareSlider dir='ltr'
                                     itemOne={<ReactCompareSliderImage src={before} srcSet={before} leftlaba alt="Image one" />} 
                                     itemTwo={<ReactCompareSliderImage src={after} srcSet={after} alt="Image two" />}
                                     />
-                                    </div>  
-                              
-
-
-                                    
+                                </div>  
                             </div>
-
-                        
                             <h3 class="services-details__title-1">Prettau V-MAX Veneer </h3>
                             <p class="services-details__text-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim

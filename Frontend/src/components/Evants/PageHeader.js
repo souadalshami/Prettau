@@ -4,6 +4,7 @@ import page_header_shape_2 from "../../assets/images/shapes/page-header-shape-2.
 import page_header_shape_3 from "../../assets/images/shapes/page-header-shape-3.png";
 import page_header_shape_4 from "../../assets/images/shapes/page-header-shape-4.png";
 import { Link } from 'react-router-dom'
+import { t } from "i18next";
 
 function PageHeader() {
   return (
@@ -26,15 +27,15 @@ function PageHeader() {
       </div>
       <div className="container">
         <div className="page-header__inner">
-          <h2>Events</h2>
+          <h2>{t('events')}</h2>
           <ul className="thm-breadcrumb list-unstyled">
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">{t('home')}</Link>
             </li>
             <li>
               <span className="icon-down-arrow"></span>
             </li>
-            <li>Events</li>
+            <li>{t('events')}</li>
           </ul>
         </div>
       </div>

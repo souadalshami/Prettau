@@ -2,14 +2,11 @@ import news_one_shape_1 from '../../assets/images/shapes/news-one-shape-1.png'
 import news_one_shape_2 from '../../assets/images/shapes/news-one-shape-2.png'
 import news_one_shape_3 from '../../assets/images/shapes/news-one-shape-3.png'
 import news_1_1 from '../../assets/images/blog/news-1-1.jpg';
-// import news_1_2 from '../../assets/images/blog/news-1-2.jpg';
-// import news_1_1 from '../../assets/images/blog/news-1-1.jpg';
-import news_one_person_img from '../../assets/images/blog/news-one-person-img.jpg'
-
 import news_1_2 from '../../assets/images/blog/news-1-2.jpg'
 import news_1_3 from '../../assets/images/blog/news-1-3.jpg'
 import { Link } from 'react-router-dom';
-
+import { t } from "i18next";
+import { Trans } from 'react-i18next';
 
 
 
@@ -31,9 +28,9 @@ function Blogs(){
             <div className="container">
                 <div className="section-title text-center">
                     <div className="section-title__tagline-box">
-                        <p className="section-title__tagline">Latest Blog</p>
+                        <p className="section-title__tagline">{t('home-blogs-section-name')}</p>
                     </div>
-                    <h2 className="section-title__title">Learn about our latest <br/> news from blog.</h2>
+                    <h2 className="section-title__title"><Trans i18nKey="home-blogs-title"></Trans></h2>
                 </div>
                 <div className="row">
                     <div className="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="100ms">

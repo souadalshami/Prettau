@@ -6,13 +6,18 @@ import gold_logo from '../../assets/images/logo/gold.png';
 
 const locales = {
     en: { title: 'English' },
-    // ar: { title: 'Arabic' },
+    ar: { title: 'Arabic' },
   }; 
 
 
 function Header(){
     const [navbarOpen, setNavbarOpen] = useState(false);
     const { t, i18n } = useTranslation();
+
+    function refreshPage(locale){
+        window.location.reload()
+        i18n.changeLanguage(locale)
+    }
 
     const [color,setColor] = useState(false);
     const changeColor = ()=>{
@@ -37,7 +42,7 @@ return(
                                         <i className="fas fa-clock"></i>
                                     </div>
                                     <div className="text">
-                                        <p>Always Open</p>
+                                        <p>{t('open_time')}</p>
                                     </div>
                                 </li>
                                 <li>
@@ -45,7 +50,7 @@ return(
                                         <i className="fas fa-envelope"></i>
                                     </div>
                                     <div className="text">
-                                        <p><a href="mailto:help@company.com">Prettau.ptrettau@gmail.com</a>
+                                        <p><a href="mailto:Prettau.ptrettau@gmail.com">Prettau.ptrettau@gmail.com</a>
                                         </p>
                                     </div>
                                 </li>
@@ -54,7 +59,7 @@ return(
                                         <i className="fas fa-map-marker"></i>
                                     </div>
                                     <div className="text">
-                                        <p>60 th St, Sulimaniyah. Iraq </p>
+                                        <p>{t('location')} </p>
                                     </div>
                                 </li>
                             </ul>
@@ -80,13 +85,13 @@ return(
                                 <a href="#" className="mobile-nav__toggler"  onClick={() => setNavbarOpen((prev) => !prev)}><i className="fa fa-bars"></i></a>
                                 <ul className="main-menu__list" >
                                     <li> 
-                                        <NavLink exact="true" to="/"> Home </NavLink>    
+                                        <NavLink exact="true" to="/">{t('home')}</NavLink>    
                                     </li> 
                                     <li>
-                                        <NavLink  exact="true" to="/about">About</NavLink>
+                                        <NavLink  exact="true" to="/about">{t('about')}</NavLink>
                                     </li>
                                     <li className="dropdown">
-                                        <a href="#">Products</a>
+                                        <a href="#">{t('products')}</a>
                                         <ul className="sub-menu">
                                             <li><Link to="/premium">Premium</Link></li>
                                             <li><Link to="/premium">Titanium</Link></li>
@@ -99,16 +104,16 @@ return(
                                     </li>
 
                                     <li>
-                                        <NavLink exact="true" to="/evants">Evants</NavLink>
+                                        <NavLink exact="true" to="/evants">{t('events')}</NavLink>
                                     </li>
                                     <li>
-                                        <NavLink exact="true" to="/certificates">Certificates</NavLink>
+                                        <NavLink exact="true" to="/certificates">{t('Certificates')}</NavLink>
                                     </li>
                                     <li>
-                                        <NavLink exact="true" to="/video">Videos</NavLink>
+                                        <NavLink exact="true" to="/video">{t('Videos')}</NavLink>
                                     </li>
                                     <li>
-                                        <NavLink exact="true" to="/contact">Contact</NavLink>
+                                        <NavLink exact="true" to="/contact">{t('contact')}</NavLink>
                                     </li>
                                 </ul>
                             </div>
@@ -117,13 +122,15 @@ return(
                                     <ul className="main-menu__list">
                                         <li>
                                             <a href="#">{i18n.resolvedLanguage.toUpperCase()}</a>
-                                            {/* <ul className="sub-menu">
+                                            <ul className="sub-menu">
                                                 {Object.keys(locales).map((locale) => (
-                                                    <li key={locale}><a style={{ fontWeight: i18n.resolvedLanguage === locale ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(locale)}>
-                                                        {locales[locale].title}
-                                                    </a></li>
+                                                    <li key={locale}><a style={{ fontWeight: i18n.resolvedLanguage === locale ? 'bold' : 'normal' }} type="submit" 
+                                                    onClick={  () =>  refreshPage(locale) }>
+                                                    {locales[locale].title}
+                                            </a>
+                                            </li>
                                                 ))}
-                                            </ul> */}
+                                            </ul>
                                         </li>
                                     </ul>
                                 </div>
@@ -132,14 +139,11 @@ return(
                                         <span className="icon-phone"></span>
                                     </div>
                                     <div className="main-menu__call-content">
-                                        <p className="main-menu__call-sub-title">Need help?</p>
-                                        <h5 className="main-menu__call-number"><a href="tel:+9647700372464">+964 770 037 2464 </a>
+                                        <p className="main-menu__call-sub-title">{t('need_help')}</p>
+                                        <h5 dir='ltr' className="main-menu__call-number"><a dir="ltr" href="tel:+9647700372464">+964 770 037 2464 </a>
                                         </h5>
                                     </div>
                                 </div>
-                                {/* <div className="main-menu__btn-box">
-                                    <NavLink to="/contact" className="main-menu__btn thm-btn">Get Consulting</NavLink>
-                                </div> */}
                             </div>
                         </div>
                     </div>
@@ -155,18 +159,18 @@ return(
             <div class="mobile-nav__content">
                 <span class="mobile-nav__close mobile-nav__toggler"  onClick={() => setNavbarOpen(false)}><i class="fa fa-times"></i></span>
                 <div class="logo-box">
-                    <a href="index.html" aria-label="logo image"><img src={gold_logo} alt="" /></a>
+                    <a href="/" aria-label="logo image"><img src={gold_logo} alt="" /></a>
                 </div>
                 <div class="mobile-nav__container">
                     <ul className="main-menu__list">
                         <li class="dropdown current megamenu">
-                            <Link to="/">Home </Link>
+                            <Link to="/">{t('home')}</Link>
                         </li>
                         <li class="dropdown current megamenu">
-                            <Link to="/about">About </Link>
+                            <Link to="/about">{t('about')} </Link>
                         </li>
                         <li class="dropdown current megamenu">
-                            <a href="#">Products
+                            <a href="#">{t('Products')}
                                 <button aria-label="dropdown toggler"><i class="fa fa-angle-down"></i></button>
                              </a>
                              <ul class="sub-menu d-none">
@@ -176,16 +180,16 @@ return(
                             </ul>
                         </li> 
                         <li class="dropdown current megamenu">
-                            <Link to="/events">Events </Link>
+                            <Link to="/events">{t('events')}</Link>
                         </li>
                         <li class="dropdown current megamenu">
-                            <Link to="/certificates">Certificates </Link>
+                            <Link to="/certificates">{t('Certificates')} </Link>
                         </li>    
                         <li class="dropdown current megamenu">
-                            <Link to="/video">Video </Link>
+                            <Link to="/video">{t('Videos')}</Link>
                         </li>    
                         <li class="dropdown current megamenu">
-                            <Link to="/contact">Contact </Link>
+                            <Link to="/contact">{t('contact')}</Link>
                         </li>    
                     </ul>
                 </div>
@@ -193,11 +197,11 @@ return(
                 <ul class="mobile-nav__contact list-unstyled">
                     <li>
                         <i class="fa fa-envelope"></i>
-                        <a href="mailto:needhelp@packageName__.com">needhelp@bixola.com</a>
+                        <a dir="ltr" href="mailto:Prettau.ptrettau@gmail.com">Prettau.ptrettau@gmail.com</a>
                     </li>
                     <li>
                         <i class="fa fa-phone-alt"></i>
-                        <a href="tel:666-888-0000">666 888 0000</a>
+                        <a dir="ltr" href="tel:666-888-0000">+964 770 037 2464</a>
                     </li>
                 </ul>
                 <div class="mobile-nav__top">
