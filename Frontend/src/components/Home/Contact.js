@@ -3,7 +3,8 @@ import cta_one_shape_1 from '../../assets/images/shapes/cta-one-shape-1.png'
 import cta_one_shape_2 from '../../assets/images/shapes/cta-one-shape-2.png'
 import cta_one_shape_3 from '../../assets/images/shapes/cta-one-shape-3.png'
 import cta_one_shape_4 from '../../assets/images/shapes/cta-one-shape-4.png'
-
+import { t } from "i18next";
+import { Trans } from 'react-i18next';
 
 
 function Contact(){
@@ -25,11 +26,11 @@ function Contact(){
             <div class="container">
                 <div class="cta-one__inner">
                     <div class="cta-one__title-box">
-                        <h3 class="cta-one__title">Make an appointment at <br/> Prettau Dental Lab</h3>
-                        <p class="cta-one__text">Our care teams are here to make you feel comfortable and accepted in our welcoming, <br/>judgement free space so you can move forward confidently in your own dental care journey.</p>
-                    </div>
+                        <h3 class="cta-one__title"><Trans i18nKey="home-Contact-title"></Trans></h3>
+                        <p class="cta-one__text"><Trans i18nKey="home-Contact-description"></Trans></p>
+                </div>
                     <div class="cta-one__btn-box">
-                        <Link to="/contact" class="cta-one__btn thm-btn">Contact Us</Link>
+                        <Link to="/contact" class="cta-one__btn thm-btn">{t('home-Contact-button')}</Link>
                     </div>
                 </div>
             </div>

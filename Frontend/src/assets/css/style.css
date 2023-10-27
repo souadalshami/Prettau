@@ -74,3 +74,218 @@ background-color: #f3920e2b !important;
 
 
 }
+.sidebar__category-list li a:hover {
+  background-color: rgba(223, 168, 93, 0.10)!important;
+}
+
+/* cursor */
+
+iframe{
+  cursor:default !important;
+}
+
+/* arabic */
+
+.ar .owl-carousel,
+.ar .bx-wrapper { direction: ltr; }
+.ar .owl-carousel .owl-item { direction: rtl; }
+
+
+.ar .main-slider__video-link {
+  margin-right: 35px;
+} 
+
+.ar .main-slider__video-text {
+  margin-right: 20px;
+}
+
+.ar .footer-widget__company-list {
+    padding-right: 0px;
+}
+
+
+.ar .site-footer__social a+a {
+  margin-left: 0px;
+  margin-right: 17px;
+}
+.ar .icon-right-arrow1{
+    transform: rotate(180deg);
+
+}
+.ar .site-footer__social a+a {
+  margin-left: 0px;
+}
+
+.ar .main-menu__call-content{
+      margin-right: 10px !important;
+
+    
+}
+.ar .main-menu__logo{
+  padding-left: 9px;
+}
+
+.ar .main-menu .main-menu__list>li+li,
+.ar .stricky-header .main-menu__list>li {
+  margin-right: 29px;
+  margin-left: 0px;
+}
+
+
+.ar .main-menu .main-menu__list>li>ul>li:hover>a::before,
+.ar .main-menu .main-menu__list>li>ul>li>ul>li:hover>a::before,
+.ar .stricky-header .main-menu__list>li>ul>li:hover>a::before,
+.ar .stricky-header .main-menu__list>li>ul>li>ul>li:hover>a::before {
+  transform: translateY(-50%) scale(-1) !important;
+left: 0px !important;
+}
+
+.ar .main-header__contact-list li .text {
+  margin-left: 0px !important;
+  margin-right: 10px !important;
+}
+.ar .main-header__contact-list li+li {
+  margin-left: 0px !important;
+  margin-right: 30px !important;
+}
+/* about */
+
+.ar .services-details__feature {
+  position: relative;
+  display: block;
+  margin-left: 0px !important;
+  margin-right: 80px !important;
+}
+
+.ar .list-unstyled{
+    padding-right: 0px;
+}
+
+.ar .site-footer-two__social a {
+  margin-left: 0px;
+  margin-right: 17px;
+}
+
+
+.ar .footer-widget-two__contact {
+  position: relative;
+  display: block;
+  margin-left: 0px !important;
+  margin-right: 36px !important;
+}
+
+.ar .footer-widget-two__title-box::before {
+
+ right: 0 !important;
+}
+
+.ar .footer-widget-two__contact-list li p {
+ 
+  margin-left: 00px !important;
+  margin-right: 10px !important;
+}
+
+.ar .main-menu__call {
+  padding: 25px 0;
+  padding-right: 25px !important;
+  z-index: 5;
+}
+
+
+/* certificationn */
+.ar .team-two__left {
+  position: relative;
+  display: block;
+  margin-left: 98px !important;
+  margin-right: 0px !important;
+  z-index: 2;
+}
+
+
+.ar .team-two__right{
+  display: block;
+  margin-left: -300px !important;
+  margin-right: 0px !important;
+}
+.ar .team-two__left .section__title-two{
+  text-align: right!important;
+}
+
+
+.ar .icon-down-arrow{
+  transform: rotate(90deg);
+}
+ .ar .process-one__count {
+  position: relative;
+  top: 0;
+  left: 00% !important;
+  right: 25% !important;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border: 1px dashed #cccbd0;
+  background-color: #FAFAFA;
+  border-radius: 50%;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.ar .contact-page__input-box input[type="text"],
+.ar .contact-page__input-box input[type="email"] {
+  padding-right: 0px!important;
+  padding-left: 30px!important;
+}
+@media only screen and (max-width: 767px) {
+    
+.ar .process-one__count {
+  position: relative;
+  top: 0;
+ 
+  right: 35% !important;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border: 1px dashed #cccbd0;
+  background-color: #FAFAFA;
+  border-radius: 50%;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;}
+
+
+    }
+
+    .ar .process-one__shape-1 {
+  position: absolute;
+  top: 12px;
+  left: 16%!important;
+  right: 00%!important;
+  transform: scale(-1);
+}
+@media only screen and (min-width: 1200px) and (max-width: 1319px) {
+   .process-one__shape-1 {
+        display: none;
+    }
+  }
+
+
+.ar .about-two__points li p {
+  margin-left: 13px;
+  margin-right: 13px!important;
+
+}
+
+
+.about-two__count  :not(:first-child)  {
+  margin-right: 13px!important;
+}
+
+.services-details__feature{
+
+  margin:30px!important;
+}

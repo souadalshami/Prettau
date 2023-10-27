@@ -4,7 +4,7 @@ import page_header_shape_1 from "../../assets/images/shapes/page-header-shape-1.
 import page_header_shape_2 from "../../assets/images/shapes/page-header-shape-2.png";
 import page_header_shape_3 from "../../assets/images/shapes/page-header-shape-3.png";
 import page_header_shape_4 from "../../assets/images/shapes/page-header-shape-4.png";
-
+import { t } from "i18next";
 function PageHeader() {
   return (
     <section className="page-header">
@@ -26,15 +26,15 @@ function PageHeader() {
       </div>
       <div className="container">
         <div className="page-header__inner">
-          <h2>Videos</h2>
+          <h2>{t('Videos')}</h2>
           <ul className="thm-breadcrumb list-unstyled">
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">{t('home')}</Link>
             </li>
             <li>
               <span className="icon-down-arrow"></span>
             </li>
-            <li>Videos</li>
+            <li>{t('Videos')}</li>
           </ul>
         </div>
       </div>

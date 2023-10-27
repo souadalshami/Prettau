@@ -3,11 +3,9 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import emax from '../../assets/images/brand/emax.png' ; 
 import juvora from '../../assets/images/brand/juvora.png' ; 
-import vertex from '../../assets/images/brand/vertex.png' ; 
 import vita from '../../assets/images/brand/vita.png' ; 
 import viv from '../../assets/images/brand/viv.png' ; 
-import yetal from '../../assets/images/brand/yetal.png' ; 
-import zircon from '../../assets/images/brand/zircon.png' ; 
+ 
 
 const options = {
     "items": 5,
@@ -37,10 +35,10 @@ const options = {
 function Brand(){
 
     return(
-        <section className="brand-one">
+        <section className="brand-one"  >
             <div className="container">
                 <div className="brand-one__inner">
-                    <OwlCarousel className="brand-one__carousel thm-owl__carousel owl-theme owl-carousel " {...options}>
+                    <OwlCarousel  className="brand-one__carousel thm-owl__carousel owl-theme owl-carousel " {...options}>
                         <div className="brand-one__single">
                             <div className="brand-one__img">
                                 <a href="https://www.ivoclarvivadent.co.uk/en-uk/" target="_blank">
@@ -55,13 +53,6 @@ function Brand(){
                                 </a>
                             </div>
                         </div>
-                        {/* <div className="brand-one__single">
-                            <div className="brand-one__img">
-                                <a href="https://www.vertex-dental.com/" target="_blank">
-                                    <img src={vertex} alt=""/>
-                                </a>
-                            </div>
-                        </div> */}
                         <div className="brand-one__single">
                             <div className="brand-one__img">
                                 <a href="https://www.vita-zahnfabrik.com/" target="_blank">
@@ -76,20 +67,6 @@ function Brand(){
                                 </a>
                             </div>
                         </div>
-                        {/* <div className="brand-one__single">
-                            <div className="brand-one__img">
-                                <a href="https://www.yeti-dental.com/en/" target="_blank">
-                                    <img src={yetal} alt=""/>
-                                </a>
-                            </div>
-                        </div> */}
-                        {/* <div className="brand-one__single">
-                            <div className="brand-one__img">
-                                <a href="https://zirkonzahn.com/" target="_blank">
-                                    <img src={zircon} alt=""/>
-                                </a>
-                            </div>
-                        </div> */}
                     </OwlCarousel>
 
                 </div>

@@ -7,7 +7,8 @@ import { Link } from 'react-router-dom';
 
 import WOW from 'wowjs';
 import { useEffect } from 'react'
-
+import { t } from "i18next";
+import { Trans } from 'react-i18next';
 
 function Footer(){
     useEffect(() => { 
@@ -29,7 +30,7 @@ function Footer(){
                                 <div className="footer-widget__logo">
                                     <Link to="/"><img src={footer_logo} alt=""/></Link>
                                 </div> 
-                                <p className="footer-widget__about-text">Provides the integrated solutions for all Dental Prosthetics in parallel with the high technology around the world.</p>
+                                <p className="footer-widget__about-text"><Trans i18nKey="footer-description"></Trans></p>
                                 <div className="site-footer__social">
                                     <a href="#"><i className="fab fa-facebook"></i></a>
                                     <a href="#"><i className="fab fa-youtube"></i></a>
@@ -40,7 +41,7 @@ function Footer(){
                         <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                             <div className="footer-widget__column footer-widget__company">
                                 <div className="footer-widget__title-box">
-                                    <h3 className="footer-widget__title">Products</h3>
+                                    <h3 className="footer-widget__title">{t('footer-products')}</h3>
                                 </div>
                                 <ul className="footer-widget__company-list list-unstyled">
                                     <li><Link to="/premium">Premium</Link></li>
@@ -59,7 +60,7 @@ function Footer(){
                         <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
                             <div className="footer-widget__column footer-widget__newsletter">
                                 <div className="footer-widget__title-box">
-                                    <h3 className="footer-widget__title">Latest Blog</h3>
+                                    <h3 className="footer-widget__title">{t('footer-latest-blog')}</h3>
                                 </div>
                                 <ul className="footer-widget__company-list list-unstyled">
                                     <li><Link to="/productdetails">V_max Multilayered 4D Case 1</Link></li>
@@ -73,7 +74,7 @@ function Footer(){
                         <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
                             <div className="footer-widget__column footer-widget__contact">
                                 <div className="footer-widget__title-box">
-                                    <h3 className="footer-widget__title">You’ve Questions</h3>
+                                    <h3 className="footer-widget__title">{t('footer-questions')}</h3>
                                 </div>
                                 <ul className="footer-widget__contact-list list-unstyled">
                                     <li>
@@ -81,8 +82,8 @@ function Footer(){
                                             <span className="icon-location-1"></span>
                                         </div>
                                         <div className="content">
-                                            <h3>Location</h3>
-                                            <p> 60 th St, Sulimaniyah. Iraq </p>
+                                            <h3>{t('footer-questions-location')}</h3>
+                                            <p>{t('location')}</p>
                                         </div>
                                     </li>
                                     <li>
@@ -90,8 +91,8 @@ function Footer(){
                                             <span className="icon-phone"></span>
                                         </div>
                                         <div className="content">
-                                            <h3>Get a quote</h3>
-                                            <p><a href="tel:+9647702464">+964 (770) 037-2464</a></p>
+                                            <h3>{t('footer-questions-number')}</h3>
+                                            <p><a dir='ltr' href="tel:+9647702464">+964 (770) 037-2464</a></p>
                                         </div>
                                     </li>
                                     <li>
@@ -99,7 +100,7 @@ function Footer(){
                                             <span className="icon-envelope"></span>
                                         </div>
                                         <div className="content">
-                                            <h3>Send a mail</h3>
+                                            <h3>{t('footer-questions-mail')}</h3>
                                             <p><a href="mailto:Prettau.ptrettau@gmail.com">Prettau.ptrettau@gmail.com</a></p>
                                         </div>
                                     </li>
@@ -112,7 +113,7 @@ function Footer(){
             <div className="site-footer__bottom">
                 <div className="container">
                     <div className="site-footer__bottom-inner">
-                        <p className="site-footer__bottom-text">© Copyright Prettau 2023. All rights reserved.</p>
+                        <p className="site-footer__bottom-text">{t('footer-Copyright')}</p>
                     </div>
                 </div>
             </div>

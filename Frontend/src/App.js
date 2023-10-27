@@ -22,14 +22,22 @@ import Evants from './pages/Evants';
 import Premium from './pages/Premium';
 import GoToTop from './components/GoToTop';
 import ProductDetails from './pages/ProductDetails';
+import { useEffect } from 'react';
+import i18n from 'i18next';
 function App() {
   const [isloading, setloading] = useState(true);
-  setTimeout(() => setloading(false), 3000);
+  useEffect(() => {
+
+    const dirr = i18n.language == "en" ? "ltr" : "rtl";
+    document.documentElement.dir = dirr;
+ }, [window.localStorage.i18nextLng, i18n.language]);
+
+  setTimeout(() => setloading(false), 300);
   let element = isloading ? (
     <Preloader />
   ) : (
     <>
-      <div>
+      <div  lang={i18n.language} className={i18n.language}>
         <div className="page-wrapper">
           <Router basename='/Prettau'>
             <ScrollToTop />
